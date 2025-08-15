@@ -5,6 +5,7 @@
     $nome = $_POST['nome'];
     $genero = $_POST['genero'];
     $ano = $_POST['ano'];
+    $autor = $_POST['autor'];
 
     $nome_arquivo = $_FILES['foto']['name'];
     $caminho_temporario = $_FILES['foto']['tmp_name'];
@@ -22,13 +23,13 @@
     move_uploaded_file($caminho_temporario, $caminho_destino);
 
     // INSERT INTO tb_livro VALUES (null, 'Harry Potter', 'Ficção', 1990)       
-    $sql = "INSERT INTO tb_livro (nome, genero, ano, foto) VALUES (?, ?, ?, ?)";
+    $sql = "INSERT INTO tb_livro (nome, genero, ano, foto, id_autor) VALUES (?, ?, ?, ?, ?)";
     $comando = mysqli_prepare($conexao, $sql);
 
     // letra s -> varchar, date, datetime, char
     // letra i -> int
     // letra d -> float, decimal
-    mysqli_stmt_bind_param($comando, 'ssis', $nome, $genero, $ano, $novo_nome);
+    mysqli_stmt_bind_param($comando, 'ssisi', $nome, $genero, $ano, $novo_nome, $autor);
 
     mysqli_stmt_execute($comando);
 
