@@ -13,6 +13,7 @@
 
     <hr>
 
+    <a href="listar_autores.php">Lista de autores</a> <br>
     <a href="listar_livros.php">Lista de Livros</a> <br>
     <a href="listar_livros_2.php">Lista de Livros (cartões)</a>
 </body>
