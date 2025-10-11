@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Site</title>
 </head>
+
 <body>
-    <h1>Página inicial</h1>
+    <h2>Acesso ao Sistema</h2>
+    <form action="verificar_login.php" method="POST">
+        E-mail: <br>
+        <input type="text" name="email"> <br><br>
 
-    <a href="form_livro.php">Cadastrar Livro</a> <br>
-    <a href="form_autor.php">Cadastrar Autor</a> <br>
+        Senha: <br>
+        <input type="text" name="senha"> <br><br>
 
-    <hr>
-
-    <a href="listar_autores.php">Lista de autores</a> <br>
-    <a href="listar_livros.php">Lista de Livros</a> <br>
-    <a href="listar_livros_2.php">Lista de Livros (cartões)</a>
+        <input type="submit" value="Acessar">
+    </form>
 </body>
+
 </html>
