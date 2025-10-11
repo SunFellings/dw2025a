@@ -18,6 +18,12 @@
 
         <input type="submit" value="Acessar">
     </form>
+
+    <?php
+    if (isset($_GET['msg'])) {
+        echo "<p>Usuário ou senha inválidos!</p>";
+    }
+    ?>
 </body>
 
 </html>
