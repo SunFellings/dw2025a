@@ -10,11 +10,16 @@
 
     <a href="form_livro.php">Cadastrar Livro</a> <br>
     <a href="form_autor.php">Cadastrar Autor</a> <br>
+    <a href="form_curso.php">Cadastrar Curso</a> <br>
+    <a href="form_emprestimo.php">Cadastrar Emprestimo</a> <br>
+
+
 
     <hr>
 
     <a href="listar_autores.php">Lista de autores</a> <br>
     <a href="listar_livros.php">Lista de Livros</a> <br>
     <a href="listar_livros_2.php">Lista de Livros (cartões)</a>
+    
 </body>
 </html>
